@@ -1,3 +1,4 @@
+import "dotenv/config"
 import { z } from "zod"
 
 const envSchema = z.object({
@@ -10,8 +11,6 @@ const envSchema = z.object({
   API_URL: z.string(),
   API_KEY: z.string()
 })
-
-console.log(process.env)
 
 const _env = envSchema.safeParse(process.env)
 
