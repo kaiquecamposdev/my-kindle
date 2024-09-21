@@ -1,0 +1,9 @@
+# Dependecies
+node_modules/
+pnpm-lock.yaml
+
+# Build
+.vscode
+
+# Environments
+.env
